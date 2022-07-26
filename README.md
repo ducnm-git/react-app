@@ -69,20 +69,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ### Installing CommitLint
 
 ```
 npm i -D @commitlint/{cli,config-conventional}
 ```
+
 create the file in the root of our application
+
 ```
 vi .commitlintrc.json
 {
   "extends": ["@commitlint/config-conventional"]
 }
 ```
+
 export the config-conventional rules
+
 ```
 touch commitlint.config.js
 module.exports = {
@@ -97,4 +100,5 @@ npm i -D husky
 npx husky install
 npx husky add .husky/commit-msg 'npx commitlint --edit $1'
 ```
+
 Let’s try and commit something without any convention.
