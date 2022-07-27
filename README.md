@@ -1,3 +1,5 @@
+![example workflow](https://github.com/ducnm-git/react-app/actions/workflows/ci.yml/badge.svg?branch=develop&event=push)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -102,3 +104,7 @@ npx husky add .husky/commit-msg 'npx commitlint --edit $1'
 ```
 
 Let’s try and commit something without any convention.
+
+### Triggering a workflow from a workflow
+
+[Official document](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#triggering-a-workflow-from-a-workflow), When use GITHUB_TOKEN to peprform tasks, events triggered by GITHUB_TOKEN will not trigger other workflow from running due to recursive workflow may occur. Instead, use personal access token and store it as a secret.
