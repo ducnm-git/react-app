@@ -1,0 +1,14 @@
+name: Hello World
+author: ducnm-github
+description: Some descriptions
+inputs:
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+    default: ducnm-github
+outputs:
+  time:
+    description: "The greeting time"
+runs:
+  using: "nodejs17"
+  main: "dist/index.js"
