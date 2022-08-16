@@ -5,7 +5,7 @@ inputs:
   who-to-greet:
     description: "Who to greet"
     required: true
-    default: ducnm-github
+    default: ducnm-git
 outputs:
   time:
     description: "The greeting time"
