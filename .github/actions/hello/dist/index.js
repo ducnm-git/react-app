@@ -9671,7 +9671,7 @@ try {
   // throw(new Error("Some error message"));
   core.debug("Debug message");
   core.warning("Warning message");
-  core.error();
+  core.error("Error message");
   ("Error message");
 
   const name = core.getInput("who-to-greet");
@@ -9681,7 +9681,7 @@ try {
   const time = new Date();
   core.setOutput("time", time.toTimeString());
 
-  core.startGroups("Logging github object");
+  core.startGroup("Logging github object");
   console.log(JSON.stringify(github, null, "\t"));
   core.endGroup();
 
